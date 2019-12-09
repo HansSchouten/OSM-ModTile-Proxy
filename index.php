@@ -8,7 +8,7 @@ $y = intval($_GET['y']);
 // (if not, this request will init the rendering process)
 $ch_local = curl_init("http://localhost/hot/$z/$x/$y.png");
 curl_setopt($ch_local, CURLOPT_CONNECTTIMEOUT, 0.5);
-curl_setopt($ch_local, CURLOPT_TIMEOUT, 0.5;
+curl_setopt($ch_local, CURLOPT_TIMEOUT, 0.5);
 curl_setopt($ch_local, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($ch_local);
 
